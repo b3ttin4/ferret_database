@@ -7,7 +7,7 @@ Database written in sqlite to access and query longitudinal imaging data across 
 
 The project has the following structure:
 
-    database/
+    ferret_database/
       |- README.md
       |- database/
          |- __init__.py
@@ -17,8 +17,7 @@ The project has the following structure:
          |- tables.py
          |- data/
             |- ferret_database.db
-         |- tests/
-      |- scripts/
+
       
       
 ### Project Data
