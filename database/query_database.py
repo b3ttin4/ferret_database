@@ -54,7 +54,6 @@ def select_all_timeseries_for_key(conn,key,value,output_keys=None,ferret_subset=
 		cur.execute("SELECT ferretNumber from ferrets WHERE id=?",(ferret_id,))
 		ferretNumber = cur.fetchone()[0]
 
-		print("row",row,ferretNumber,ferret_subset)
 		if (ferret_subset is not None and ferretNumber not in ferret_subset):
 			continue
 
@@ -62,7 +61,6 @@ def select_all_timeseries_for_key(conn,key,value,output_keys=None,ferret_subset=
 		date = cur.fetchone()[0]
 
 		dataset = [ferretNumber,date] + list(row[2:])
-		print(dataset)
 		datasets.append(dataset)
 
 	return datasets
