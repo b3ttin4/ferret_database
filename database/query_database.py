@@ -1,7 +1,7 @@
 import sqlite3
 import re
 
-from mustela_bh.database.database import tables,gen_database
+from . import tables,gen_database
 
 def select_all_ferrets(conn):
 	"""
