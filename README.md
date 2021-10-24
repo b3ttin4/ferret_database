@@ -15,6 +15,7 @@ The project has the following structure:
          |- print_database_schema.py
          |- query_database.py
          |- tables.py
+         |- tools.py
          |- data/
             |- ferret_database.db
 
