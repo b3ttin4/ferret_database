@@ -1,5 +1,5 @@
 import sqlite3
-from mustela_bh.database.database import tables,get_database_path,create_connection
+from . import tables,get_database_path,create_connection
 
 def create_table(conn,create_table_sql):
 	""" create a table from the create_table_sql statement
