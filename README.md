@@ -56,11 +56,11 @@ Table: timeseries
 
 ### Scripts
 
-This repository contains a [Python script](https://github.com/b3ttin4/ferret_database/blob/master/database/tables.py) that defines the three tables, and defines functions to generate, update
+This repository contains a [Python script](https://github.com/b3ttin4/ferret_database/blob/main/database/tables.pyy) that defines the three tables, and defines functions to generate, update
 and delete items in the tables. <br/>
-In the [Python script]() two exemplary functions are provided to query the database. In particular, a function is provided that queries all experiments for a user-defined combination of key words and outputs those experiments that share the given values.  <br/>
-The table of the database given above was created with the [Python script]().<br/>
-For completion I added the [Python script](https://github.com/b3ttin4/ferret_database/blob/master/database/gen_database.py) which generated the database. However, it relies on functions not provided in this repository.
+In the [Python script](https://github.com/b3ttin4/ferret_database/blob/main/database/query_database.py) two exemplary functions are provided to query the database. In particular, a function is provided that queries all experiments for a user-defined combination of key words and outputs those experiments that share the given values.  <br/>
+The table of the database given above was created with the [Python script](https://github.com/b3ttin4/ferret_database/blob/main/database/print_database_schema.py).<br/>
+For completion I added the [Python script](https://github.com/b3ttin4/ferret_database/blob/main/database/gen_database.py) which generated the database. However, it relies on functions not provided in this repository.
 
 
 ### Licensing
