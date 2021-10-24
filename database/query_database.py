@@ -1,7 +1,7 @@
 import sqlite3
 import re
 
-from . import tables,gen_database
+import tables,gen_database
 
 def select_all_ferrets(conn):
 	"""
