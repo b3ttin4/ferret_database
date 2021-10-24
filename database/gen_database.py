@@ -1,5 +1,6 @@
 import sqlite3
-from . import tables,get_database_path,create_connection
+from tools import get_database_path,create_connection
+import tables
 
 def create_table(conn,create_table_sql):
 	""" create a table from the create_table_sql statement
