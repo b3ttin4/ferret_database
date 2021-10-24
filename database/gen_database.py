@@ -91,7 +91,8 @@ def update_database():
 	database_path = get_database_path()
 	conn = create_connection(database_path)
 
-	## order of tuple_new is tuple_old + id
+	# order of tuple_new is tuple_old + id
+	# examples from database
 	ferret_new = (23,"2018-06-11","2018-07-11",2,"3000-07-10",1)
 	date_new = None
 	ts_new = None#(4,"v1","none_black",45,42,736)
