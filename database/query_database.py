@@ -39,9 +39,10 @@ def select_all_timeseries_for_key(conn,key,value,output_keys=None,ferret_subset=
 		params_str = ","+",".join(output_keys)
 		print("params_str",params_str,value)
 	if info_per_day:
-		cur.execute("SELECT DISTINCT ferret_id,date_id? from timeseries WHERE ?=? ORDER BY ferret_id",(params_str,key,value,))
+		cur.execute("SELECT DISTINCT ferret_id,date_id{} from timeseries WHERE {} = ? ORDER BY ferret_id".format(params_str,key),(value,))
 	else:
-		cur.execute("SELECT ferret_id,date_id,ts? from timeseries WHERE ?=? ORDER BY ferret_id",(params_str,key,value,))
+		cur.execute("SELECT ferret_id,date_id,ts{} from timeseries WHERE {} = ? ORDER BY ferret_id".format(params_str,key),(value,))
+
 
 
 	timeseries = cur.fetchall()
@@ -68,7 +69,7 @@ def select_all_timeseries_for_key(conn,key,value,output_keys=None,ferret_subset=
 
 
 if __name__=="__main__":
-	from mustela_bh.database.database import create_connection,get_database_path
+	from tools import create_connection,get_database_path
 
 	database_path = get_database_path()
 	conn = create_connection(database_path)
