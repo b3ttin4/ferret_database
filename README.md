@@ -50,7 +50,7 @@ Table: timeseries
 | 0     | id              | integer    | 0          | -          | 1     | -          | -          |
 | 1     | ts              | integer    | 1          | -          | 0     | -          | -          |
 | 2     | area            | text       | 0          | -          | 0     | -          | -          |
-| 3     | exp             | text       | 0          | -          | 0     | -          | -          |
+| 3     | exp             | integer    | 0          | -          | 0     | -          | -          |
 | 4     | ref_ts          | integer    | 0          | -          | 0     | -          | -          |
 | 5     | date_id         | integer    | 1          | -          | 0     | dates      | id         |
 | 6     | ferret_id       | integer    | 1          | -          | 0     | ferrets    | id         |
